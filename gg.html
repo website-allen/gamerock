@@ -20,88 +20,163 @@
 	   <link rel="canonical" href="gg.html"/>
 		<style type="text/css">	
 	 	 /*Menu drop-down*/
-	  	   * {
+	  	    * {
+	  	 margin: 0;
+	  	 padding: 0;
 				box-sizing: border-box;
+			
 			}
 			html, body {
+				height: 100%;			
+			}
+			.container {				
+				position: relative;
+				display: inline-block;
 				height: 100%;
 			}
-			.container {
-				height: 90%;
-				position: absolute;
-				margin-top: -49px;
-				margin-left: 295px;
-			}
-			.container div {
-				display: flex;
-				height: 60px;
-				background: rgba(0,0,0,0.2);
-				
-			}
-			
-			.container div label {
-				font-size: 2.3em;
-				height: 80%;
-				width: 60px;
-				line-height: 60px;
-				text-align: center;
+					
+			#label-1 {				
+				font-size: 2.4em;				
+				line-height: 60px;				
 				cursor: pointer;
 				transition: .5s ease;
-				color: silver;
-				background: none;
+				color: #fff;				
+				transition: 2s;					
+			}		
+			#label-2 {
+				color: transparent;
+				margin-left: -40px;		
 			}
-			.container div label:hover {
-				color: #fff;
-				background: #000;
-			}
-			input[type=checkbox] {
-				display: none;
-			}
-			.container nav {
-				position: absolute;
-				top: 60px;
-				bottom: 0;
-				width: 0px;
-				background: rgba(0,0,0,.1);
-				box-shadow: 2px 5px 5px #000;
-				overflow: hidden;
-				transition: .5s ease;
-				margin-left: -250px;
-				background: linear-gradient(to left top, #09203F, #fff, #724004);
-				height: 250px;
-				border-radius: 3px;
-			}
-			.container nav ul {
-				list-style: none;
-			}
-			.container nav ul li a {
-				display: flex;
-				align-items: center;
-				font-size: 1.2em;
-				font-family: Times New Roman;
-				color: #000;
+			
+	  .label-container {
+	   	 position: absolute;
+    		margin-top: -70px;
+    		background: #000;			
+	    	margin-left: 290px;		
+	    	height: 55px;
+	    	width: 100px;
+	    	display: block;
+	    	padding-left: 15px
+	    	
+  	}	
+  	
+  	#toggle {
+  		display: none;
+  	}
+			.nav > a {
+				display: block;
+				line-height: 30px;
 				text-decoration: none;
-				text-transform: uppercase;
-				height: 50px;
-				transition: .5s ease;
-				margin-left: -55px;
-				padding-left: 60px;
-				font-weight: bold;
+				color: #000;
+				padding-left: 25px;
+				padding-top: 20px;
+				font-size: 20px;
 			}
-			.container nav ul li a:hover {
+			.nav > a:hover {
 				background: rgba(0,0,0,.7);
 				color: #fff;
-				border-right: 5px solid #fff;
-				box-shadow: 25px 0px 25px 0px;
+				border-left: 5px solid #fff;
+				box-shadow: 0px 10px 10px;
+				padding-left: 40px;
 			}
-			.container nav ul li:hover {
-				padding-left: 15px;
-				transition: .8s ease;
+			.nav {
+				position: absolute;
+				width: 300px;
+				height: 0px;
+				transition: height 1s;
+				margin-left: 10px;
+				background: linear-gradient(to left top, #09203F, #fff, #724004);
+				overflow: hidden;
 			}
-			input[type=checkbox]:checked ~ nav {
-				width: 250px;
-			} 			
 			
+			#toggle:checked ~ nav {
+				height: 310px;
+			}
+			
+			
+			 #toggle:checked ~ .label-container > #label-1 {
+				color: transparent;
+			}
+			
+			#toggle:checked ~ .label-container > #label-2 {
+				font-size: 2.4em;				
+				line-height: 60px;				
+				cursor: pointer;
+				transition: .5s ease;
+				color: #fff;				
+				transition: 2s;					
+			}
+			
+			 /* buttons in menu*/
+			      /*btn-1*/
+			#btn-1 {
+				background: none;
+				border: none;
+				font-size: 20px;
+				padding-top: 15px;
+				padding-left: 18px;
+				font-family:Times New Roman;
+			}
+			.btn-1-body {
+				position: absolute;
+				width: 0px;
+				height: 90px;
+				background: transparent;				
+				margin-left: 110px;
+				margin-top: -30px;
+				overflow: hidden;
+				transition: width 1s
+			}					
+			.btn-1-body > a {
+				text-decoration: none;
+				color: #000;
+				font-size: 13px;
+				display: block;
+				padding-top: 10px;
+			}
+			.btn-1-body a:hover {
+				background: #000;
+				color: #fff;
+			}
+			#btn-1:hover > .btn-1-body {
+				width: 100px;
+				border: 1px solid black;
+			}
+			       /*btn-2*/
+			 #btn-2 {
+				background: none;
+				border: none;
+				font-size: 20px;
+				padding-top: 15px;
+				padding-left: 18px;
+				font-family: Times New Roman;
+			}
+			.btn-2-body {
+				position: absolute;
+				width: 0px;
+				height: 90px;
+				background: transparent;				
+				margin-left: 110px;
+				margin-top: -30px;
+				overflow: hidden;
+				transition: width 1s
+			}					
+			.btn-2-body > a {
+				text-decoration: none;
+				color: #000;
+				font-size: 13px;
+				display: block;
+				padding-top: 10px;
+			}
+			.btn-2-body a:hover {
+				background: #000;
+				color: #fff;
+			}
+			#btn-2:hover > .btn-2-body {
+				width: 100px;
+				border: 1px solid black;
+			}
+	    		/* menu end*/
 			
 			div:target {
          background: linear-gradient(to left bottom, #09203F, #fff, #724004 );
@@ -133,6 +208,11 @@
       tr:nth-child(even) {
          background: #fff;
       }         
+       /*font*/
+			@font-face {
+				font-family: myFont;
+				src: url('fonts/font-1.ttf');
+			}
 	 	</style>
 	 
 		</head>
@@ -140,37 +220,51 @@
 		
 		<body style="margin: 0px; font-family: Times New Roman">
 				<! top begin>    
-<div style="background-color: black; width: 360px; height: 60px;"> 
-    
-	  <div style="box-sizing: border-box; letter-spacing: 14px; background: linear-gradient(to top right, #09203F, #fff, #724004); color: #000; width: 290px; height: 50px; padding-top: 20px; padding-left: 10px; font-size: 20px; font-weight: bold; ;"> GAME ROCK </div>
-	  
-	 
-    
-   
+ <header style="position: fixed; margin-top: -22px"> 
 
-      
-  <div class="container">		
-					 <div>
-					   	<input type="checkbox" id="toggle">
-					  		<label for="toggle"> &#9783; </label>
-					<nav>
-						<ul>
-							<li> <a href="index.html"> Home </a> </li>
-							<li> <a href="#div1"> contact us </a> </li>
-							<li> <a href="#"> About </a> </li>
-							<li> <a href="supportus.html"> Support us </a> </li>
-							
-						</ul>
-					</nav>
-					  </div>
-				</div>
-				
+    
+	  <div style=" letter-spacing: 14px; background: linear-gradient(to top right, #09203F, #fff, #724004); color: #000; width: 290px; height: 50px;  padding-left: 10px; font-size: 25px; font-weight: bold; margin-top: 22px; padding-top: 10px; font-family:myFont"> GAME ROCK </div>
+	  
+	     <div class="container">
+      <input type="checkbox" id="toggle"> 
+      <div class="label-container">
+       <label for="toggle" id="label-1">&#9781; </label>
+       <label for="toggle" id="label-2">&#10005; </label>       
+       </div>
+      <nav class="nav">
+         <a href="#"> Home </a>
+         <a href="#div1"> contact us </a>
+         
+       <! btn-1>
+         <div class="btn-1-top">
+         <button id="btn-1">
+         	Games&nbsp;&nbsp;|&nbsp;&nbsp;+
+         	<div class="btn-1-body">
+         		<a href="#">Action</a>
+         		<a href="#">Simulation</a>
+         		<a href="#">Racing</a>
+         		</div>
+         	 </button>
+         	 </div>
+        <! btn-2>
+         <div class="btn-2-top">
+         <button id="btn-2">Apps&nbsp;&nbsp;|&nbsp;&nbsp;+
+         <div class="btn-2-body">
+         	<a href="#">Editing</a>
+         	<a href="#">Tools</a>         
+         	</div>
+         </button>       
+         </div>
+         <a href="#">Support Us</a>
+      </nav>  				
+      </div>
+		</header>
          <! top end >
          
-			<img src="gg-image-1.jpg" style="width: 80px; padding-top: 20px"/> 
+			<img src="gg-image-1.jpg" style="width: 80px; padding-top: 70px"/> 
 			
 			<h1 style="margin-left: 80px; margin-top: -70px; color: purple"> Game Guardian version 101.1
-			    </h1>
+			    </h1> <br/>
 			    			<! table>
 				<table>
 					<thead>
@@ -213,20 +307,20 @@
 									<td> Apps>>tools</td>
 								</tr>
 							</tbody>
-					</table>
+					</table>   <br/>
 					 <!download>
-  <p style="padding-left: 15px; color: #173459; font-size: 20px; "> <h1 style="font-size: 20px; color: #173459; margin-left: 15px">Download Game Guardian Apk: </h1>
+  <p style="padding-left: 15px; color: #173459; font-size: 20px; "> <h1 style="font-size: 20px; color: #173459; margin-left: 15px">Download Game Guardian Apk: </h1>  <br/>
 <a href="https://www.upload-4ever.com/63o2veldvq4b">
 	  <button style="background-color: red; color: white; font-family: Times New Roman; width: 65px; height: 40px; border: none; border-radius: 5px; font-size: 18px; box-shadow: 0px 10px 10px black;  background-color: #000000; cursor: pointer; margin-left: 140px; margin-top: -30px"> Apk ↓ </button> </a>
   </p>
   <br/>
   <h3 style="font-weight: bold; text-align: center"> 
-  <u>Whats Game Guardian about ?</u> 
-  </h3>
+  <u>Whats Game Guardian about ?</u>  
+  </h3> <br/>
   <p style="padding-left: 15px; padding-right: 15px">
   Game Guardian is a memory editor  developed by a group of programmers and hackers, from the package name above you can easily tell that. A memory editor allows you to view and modify contents for a memory. Here, the memory that will be edited is the data in ram for the software you want to modify. In simple terms, gameguardian is the best tools for hacking games on andriod. Its so many functions allows you to perform different searches to edit almost everything. One can even record process and execute downloaded scripts. How cool is that? So far, Its the mosy flexible and its the best tool for cheating in andriod games. For unrooted devices, Game Guardian usually needs a virtual environment like<a href="f1vm.html" style="color: green; font-weight: bold"> F1 vm</a>, parallel space, vmos etc to operate. However, f1vm is most recommended. On the other hand, rooted devices need no virtual environment for Game Guardian to operate.
   	</p>
-  	<p><b>Features of Game Guardian </b><ul>
+  	<p style="padding:20px 20px 0px 20px"><b>Features of Game Guardian </b><ul style="padding:20px">
    	<li>	Runs on ARM, x64 and x86 devices, including x86 emulators (LDPlayer, Droid4X, MOMO, KOPlayer, Andy, Memu, Leapdroid, AMIDuOS, Windroye, RemixOS, PhoenixOS, AVD, Genymotion, Nox, BlueStacks etc.) </li>
    	
 <li>Supports Android 2.3.3+ (Gingerbread) through Lollipop (5+), Marshmallow (6+), Nougat (7+), Oreo (8+), Pie (9+), 10+.</li>
@@ -279,11 +373,72 @@
 Broken link? Game not working? Any other problem? simply reach out us!
 </div>
      </center>
-  	<! footer > 
-<footer style="background: linear-gradient(to right bottom, #09203F, #fff, #724004); ; height: 185px; font-family: monospace; margin-bottom: -7px">
+     
+     <p style="font-size: 20px; color: #173459; padding-left: 15px">     	
+        	<br/>
+   	<b>Share on:</b>
+   	</p>
+   	<br/>
+     <div> 
+ <a href="https://api.whatsapp.com/send?text=http%3A%2F%2Fup-4.net%2Fd%2Fd6wR" style="text-decoration: none">
+	<img src="whatsapp-2.png" style="width: 30px; height: 30px; margin-left: 30px"> </img>
+	</a> 
 	
-	<h4 style="margin-left: 7px; padding-top: 10px"> © Copyright gamehelps 2022 | All Rights Reserved. </h4>
-	<hr color="black" width="90%" />
+	 <a href="https://www.instagram.com?url=http://up-4.net/d/d6wR" style="text-decoration: none">
+	<img src="instagram-2.png" style="width: 30px; height: 30px; margin-left: 30px"> </img>
+	</a> 
+	
+	 <a href="https://www.facebook.com/sharer/sharer.php?u=" style="text-decoration: none">
+	<img src="facebook-2.png" style="width: 30px; height: 30px; margin-left: 30px"> </img>
+	</a> 
+	
+	 <a href="https://twitter.com/intent/tweet?text=http%3A//up-4.net/d/d6wR" style="text-decoration: none">
+	<img src="twitter2.png" style="width: 30px; height: 30px; margin-left: 30px"> </img>
+	</a> 
+      </div>
+     <br/>           
+      <hr /> 
+      <p style="margin-left: 20px; color: #031e53; font-size: 20px"><b>Related: </b></p>
+<br/>
+        <! MT Manager>
+      <a href="mt.html" style="text-decoration: none; color: #6F500B">
+<div style="margin-bottom: 50px; margin-left: 10px">
+<img src="mt-image-1.jpg" style="width: 100px; height: 90px; float: left; margin-right: 10px; border-radius: 5px "/> &nbsp; &nbsp;
+  <h3>  
+  	Download 
+  	Game Guardian for Andriod
+  	</h3>
+</div>
+      </a>
+      <! F1 VM>
+      <a href="f1vm.html" style="text-decoration: none; color: #6F500B">
+<div style="margin-bottom: 50px; margin-left: 10px">
+<img src="f1vm-image-1.jpg" style="width: 100px; height: 90px; float: left; margin-right: 10px; border-radius: 5px "/> &nbsp; &nbsp;
+  <h3>  
+  	Download 
+   F1 VM for Andriod 
+  	</h3>
+</div>
+      </a>
+      <! Il2CppDumper>
+      <a href="Il2.html" style="text-decoration: none; color: #6F500B">
+<div style="margin-bottom: 50px; margin-left: 10px">
+<img src="Il2-image-1.jpg" style="width: 100px; height: 90px; float: left; margin-right: 10px; border-radius: 5px "/> &nbsp; &nbsp;
+  <h3>  
+  	Download 
+   Il2CppDumper for Andriod
+  	</h3>
+</div>
+      </a>
+     	<! footer > 
+        <footer style="background: linear-gradient(to right bottom, #09203F, #fff, #724004); ; height: 185px; font-family: monospace; margin-bottom: -7px">
+	<br/>
+	<h4 style="margin-left: 7px; padding-top: 10px"> © Copyright gamerock 2022-2023 | All Rights Reserved. </h4>
+	<br/>
+  <center>
+	<hr color="black" width="90%"/>
+	</center>
+	<br/>
 	<p id="#p1" style="margin-left: 10px; font-size: 16px"><b> Contact us:</b> </p>
 	
 	
@@ -308,8 +463,8 @@ Broken link? Game not working? Any other problem? simply reach out us!
 <br />
 
         
-
 </footer>
+
 
 					</body>
 	</html>

@@ -172,17 +172,12 @@
          border: 1px solid black;
       }  
       
-			
-			div:target {
-         background: linear-gradient(to left bottom, #09203F, #fff, #724004 );
-         color: #f8f9f9;
-         padding: 10px;
-         transition-duration: 2s;
-         border: 1px solid black;
-      }
-      
-      
-  
+	      		/* fonts*/
+	   @font-face {
+				font-family: myFont;
+				src: url('fonts/font-1.ttf');
+			}
+	      					             
 	</style>
 </head>
 <body style="font-family: Times New Roman; margin: 0px"> 
@@ -190,7 +185,7 @@
 <header style="position: fixed; margin-top: -22px"> 
 
     
-	  <div style=" letter-spacing: 14px; background: linear-gradient(to top right, #09203F, #fff, #724004); color: #000; width: 290px; height: 50px;  padding-left: 10px; font-size: 20px; font-weight: bold; margin-top: 22px; padding-top: 10px"> GAME ROCK </div>
+	  <div style=" letter-spacing: 14px; background: linear-gradient(to top right, #09203F, #fff, #724004); color: #000; width: 290px; height: 50px;  padding-left: 10px; font-size: 25px; font-weight: bold; margin-top: 22px; padding-top: 10px; font-family:myFont"> GAME ROCK </div>
 	  
 	     <div class="container">
       <input type="checkbox" id="toggle"> 
@@ -226,13 +221,14 @@
       </nav>  				
       </div>
 		</header>
-				
+				<br/> <br/> <br/> 
          <! top end >
- <h1><u> How to support us</u> </h1>
+           <div style="margin-left:20px">
+ <h1><u> How to support us</u> </h1> <br/>
  <ul>
  	<li>
  <h5>Follow/subscribe to our social media.</h5>
- </li>
+ </li> <br/>
 <div> 
  <a href="https://youtube.com/channel/UC7oUl4R4DtCvtWdpBNrlIDg" style="text-decoration: none">
 	<img src="youtube2.png" style="width: 30px; height: 30px; margin-left: 30px"> </img>
@@ -249,34 +245,39 @@
 	 <a href="https://twitter.com/allen5tar" style="text-decoration: none">
 	<img src="twitter2.png" style="width: 30px; height: 30px; margin-left: 30px"> </img>
 	</a> 
-      </div>  
+      </div>  <br/>
       <li>
  <h5>Donate to support us</h5>
- <p style="margin-left: -25px; margin-top: -15px"> Transfer your desired amount of bitcoin to the Bitcoin wallet address below.</p>
+ <p style="margin-top: 15px">You can support us with bitcoin, this is our bitcoin wallet address below.</p>
  </li>
  </ul> 
  
  <center>    
- <div style=" height: 45px; width: 360px; background-color:#A5CAE1 ; color: #000; border: 1px solid black; border-radius: 5px; padding: 10px; display: inline-block; margin: 10px">
+ <div style=" height:45px; width: 300px; background-color:#A5CAE1 ; color:#000; border:1px solid black; border-radius: 5px; padding: 10px; margin:10px; overflow-x: scroll">
  3Mw9xdUNA2wtLPDi3E85jB2RRYRaNhaoDW	
  	</div>
  	</center>
  	
- 	<p style="margin-left: 5px">We are glad and we appreciate your addition, Thank you. </p>
+ 	<p style="margin-left: 5px">Your addition means alot to us, Thank you. </p>
  	<br />
  	<br />
  <center>    
  <div style="box-sizing: border-box; height: 95px; width: 270px; background-color: #441010; color: #fff; border: 1px solid black; border-radius: 5px; padding: 10px">
  	wish to donate a different currency? or any problem trying to support us, just contact us below.
  	</div>
+ 	       </div>
  	</center>
-</body>
-<! footer > 
-<footer style="background: linear-gradient(to right bottom, #09203F, #fff, #724004); height: 200px; font-family: monospace; margin-bottom: -7px; margin-top: 50px">
-	
-	<h4 style="margin-left: 7px; padding-top: 40px; padding-bottom: 15px"> © Copyright Gamehelps 2022-2023 | All Rights Reserved. </h4>
-	<hr color="black" width="90%" />
-	<p style="margin-left: 10px; font-size: 16px; padding-top: 20px"><b> Contact us:</b> </p>
+</body> <br/> 
+        <! footer > 
+        <footer style="background: linear-gradient(to right bottom, #09203F, #fff, #724004); ; height: 185px; font-family: monospace; margin-bottom: -7px">
+	<br/>
+	<h4 style="margin-left: 7px; padding-top: 10px"> © Copyright gamerock 2022-2023 | All Rights Reserved. </h4>
+	<br/>
+  <center>
+	<hr color="black" width="90%"/>
+	</center>
+	<br/>
+	<p id="#p1" style="margin-left: 10px; font-size: 16px"><b> Contact us:</b> </p>
 	
 	
 	<!facebook icon>
@@ -293,9 +294,13 @@
 	<!twitter icon>	
 	<a href="https://twitter.com/allen5tar" style="text-decoration: none">
 	<img src="twitter.png" style="width: 30px; height: 30px; margin-left: 20px"> </img>
-	</a>
-</div>			
+	</a>	
+</div>	
+	
 <br />
-<br />     
-</footer>
+<br />
+
+        
+   </footer>
+
 </html>
