@@ -2,168 +2,12 @@
 <html>
 <head>
 	<!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-FLS58RYFRR"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-FLS58RYFRR'); </script>
-	
+         <!--Meta tags-->	
 	<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-	
+         	<!--meta tags END-->
+	 <link rel="stylesheet" type="text/css" href="style.css"/>
 <style type="text/css">
-	/*Menu drop-down*/
-	  	  * {
-	  	 margin: 0;
-	  	 padding: 0;
-				box-sizing: border-box;
-			
-			}
-			html, body {
-				height: 100%;			
-			}
-			.container {				
-				position: relative;
-				display: inline-block;
-				height: 100%;
-			}
-					
-			#label-1 {				
-				font-size: 2.4em;				
-				line-height: 60px;				
-				cursor: pointer;
-				transition: .5s ease;
-				color: #fff;				
-				transition: 2s;					
-			}		
-			#label-2 {
-				color: transparent;
-				margin-left: -40px;		
-			}
-			
-	  .label-container {
-	   	 position: absolute;
-    		margin-top: -70px;
-    		background: #000;			
-	    	margin-left: 290px;		
-	    	height: 55px;
-	    	width: 100px;
-	    	display: block;
-	    	padding-left: 15px
-	    	
-  	}	
-  	
-  	#toggle {
-  		display: none;
-  	}
-			.nav > a {
-				display: block;
-				line-height: 30px;
-				text-decoration: none;
-				color: #000;
-				padding-left: 25px;
-				padding-top: 20px;
-				font-size: 20px;
-			}
-			.nav > a:hover {
-				background: rgba(0,0,0,.7);
-				color: #fff;
-				border-left: 5px solid #fff;
-				box-shadow: 0px 10px 10px;
-				padding-left: 40px;
-			}
-			.nav {
-				position: absolute;
-				width: 300px;
-				height: 0px;
-				transition: height 1s;
-				margin-left: 10px;
-				background: linear-gradient(to left top, #09203F, #fff, #724004);
-				overflow: hidden;
-			}
-			
-			#toggle:checked ~ nav {
-				height: 310px;
-			}
-			
-			
-			 #toggle:checked ~ .label-container > #label-1 {
-				color: transparent;
-			}
-			
-			#toggle:checked ~ .label-container > #label-2 {
-				font-size: 2.4em;				
-				line-height: 60px;				
-				cursor: pointer;
-				transition: .5s ease;
-				color: #fff;				
-				transition: 2s;					
-			}
-			
-			 /* buttons in menu*/
-			      /*btn-1*/
-			#btn-1 {
-				background: none;
-				border: none;
-				font-size: 20px;
-				padding-top: 15px;
-				padding-left: 18px;
-				font-family:Times New Roman;
-			}
-			.btn-1-body {
-				position: absolute;
-				width: 0px;
-				height: 90px;
-				background: transparent;				
-				margin-left: 110px;
-				margin-top: -30px;
-				overflow: hidden;
-				transition: width 1s
-			}					
-			.btn-1-body > a {
-				text-decoration: none;
-				color: #000;
-				font-size: 13px;
-				display: block;
-				padding-top: 10px;
-			}
-			.btn-1-body a:hover {
-				background: #000;
-				color: #fff;
-			}
-			#btn-1:hover > .btn-1-body {
-				width: 100px;
-				border: 1px solid black;
-			}
-			       /*btn-2*/
-			 #btn-2 {
-				background: none;
-				border: none;
-				font-size: 20px;
-				padding-top: 15px;
-				padding-left: 18px;
-				font-family: Times New Roman;
-			}
-			.btn-2-body {
-				position: absolute;
-				width: 0px;
-				height: 90px;
-				background: transparent;				
-				margin-left: 110px;
-				margin-top: -30px;
-				overflow: hidden;
-				transition: width 1s
-			}					
-			.btn-2-body > a {
-				text-decoration: none;
-				color: #000;
-				font-size: 13px;
-				display: block;
-				padding-top: 10px;
-			}
-			.btn-2-body a:hover {
-				background: #000;
-				color: #fff;
-			}
-			#btn-2:hover > .btn-2-body {
-				width: 100px;
-				border: 1px solid black;
-			}
-	    		/* menu end*/
+	
 			#div1:target {
          background: linear-gradient(to left bottom, #09203F, #fff, #724004 );
          color: #f8f9f9;
@@ -184,8 +28,7 @@
       <! top begin>    
 <header style="position: fixed; margin-top: -22px"> 
 
-    
-	  <div style=" letter-spacing: 14px; background: linear-gradient(to top right, #09203F, #fff, #724004); color: #000; width: 290px; height: 50px;  padding-left: 10px; font-size: 25px; font-weight: bold; margin-top: 22px; padding-top: 10px; font-family:myFont"> GAME ROCK </div>
+<div class="gamerock-div"> GAME ROCK </div>    
 	  
 	     <div class="container">
       <input type="checkbox" id="toggle"> 
@@ -231,30 +74,30 @@
  </li> <br/>
 <div> 
  <a href="https://youtube.com/channel/UC7oUl4R4DtCvtWdpBNrlIDg" style="text-decoration: none">
-	<img src="youtube2.png" style="width: 30px; height: 30px; margin-left: 30px"> </img>
+	<img src="images/youtube2.png" style="width: 30px; height: 30px; margin-left: 30px"> </img>
 	</a> 
 	
 	 <a href="https://www.instagram.com/allen5tar?r=nametag" style="text-decoration: none">
-	<img src="instagram-2.png" style="width: 30px; height: 30px; margin-left: 30px"> </img>
+	<img src="images/instagram-2.png" style="width: 30px; height: 30px; margin-left: 30px"> </img>
 	</a> 
 	
 	 <a href="https://www.facebook.com/allenwill01" style="text-decoration: none">
-	<img src="facebook-2.png" style="width: 30px; height: 30px; margin-left: 30px"> </img>
+	<img src="images/facebook-2.png" style="width: 30px; height: 30px; margin-left: 30px"> </img>
 	</a> 
 	
 	 <a href="https://twitter.com/allen5tar" style="text-decoration: none">
-	<img src="twitter2.png" style="width: 30px; height: 30px; margin-left: 30px"> </img>
+	<img src="images/twitter2.png" style="width: 30px; height: 30px; margin-left: 30px"> </img>
 	</a> 
       </div>  <br/>
       <li>
  <h5>Donate to support us</h5>
- <p style="margin-top: 15px">You can support us with bitcoin, this is our bitcoin wallet address below.</p>
+ <p style="margin-top: 15px">You can support us with TON coins/tokens, this is our TON wallet address below.</p>
  </li>
  </ul> 
  
  <center>    
  <div style=" height:45px; width: 300px; background-color:#A5CAE1 ; color:#000; border:1px solid black; border-radius: 5px; padding: 10px; margin:10px; overflow-x: scroll">
- 3Mw9xdUNA2wtLPDi3E85jB2RRYRaNhaoDW	
+ UQAZtKzrroqz5m9LIdr1KZySRnr3Z5vVpMstlr9TlBE8q5j-	
  	</div>
  	</center>
  	
@@ -271,7 +114,7 @@
         <! footer > 
         <footer style="background: linear-gradient(to right bottom, #09203F, #fff, #724004); ; height: 185px; font-family: monospace; margin-bottom: -7px">
 	<br/>
-	<h4 style="margin-left: 7px; padding-top: 10px"> © Copyright gamerock 2022-2023 | All Rights Reserved. </h4>
+	<h4 style="margin-left: 7px; padding-top: 10px"> © Copyright gamerock 2022-2024 | All Rights Reserved. </h4>
 	<br/>
   <center>
 	<hr color="black" width="90%"/>
