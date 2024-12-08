@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head><title>Action games</title>
-	 <! meta tags>
+        	 <!-- meta tags-->
 	 <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
 	 <meta name="description" content="The best of Simulation games are here on GameRock."/>
 	 <meta name="title" content="Simulation Games"/>
@@ -13,240 +13,17 @@
 	 <meta property="og:image" content="gamerock-image-2.jpg"/>
 	 <link rel="canonical" href="https://gamerock.cf/simulation.html"/>
 	 <meta property="og:url" content="https://gamerock.cf/simulation.html"/>
-	<style type="text/css">	
+       	 <!--meta tags end-->
+       	 
+  <link rel="stylesheet" type="text/css" href="style.css"/> 
+       	 
 
-	 	 /*Menu drop-down*/
-	  	   * {
-	  	 margin: 0;
-	  	 padding: 0;
-				box-sizing: border-box;
-			
-			}
-			html, body {
-				height: 100%;			
-			}
-			.container {				
-				position: relative;
-				display: inline-block;
-				height: 100%;
-			}
-					
-			#label-1 {				
-				font-size: 2.4em;				
-				line-height: 60px;				
-				cursor: pointer;
-				transition: .5s ease;
-				color: #fff;				
-				transition: 2s;					
-			}		
-			#label-2 {
-				color: transparent;
-				margin-left: -40px;		
-			}
-			
-	  .label-container {
-	   	 position: absolute;
-    		margin-top: -70px;
-    		background: #000;			
-	    	margin-left: 290px;		
-	    	height: 55px;
-	    	width: 100px;
-	    	display: block;
-	    	padding-left: 15px
-	    	
-  	}	
-  	
-  	#toggle {
-  		display: none;
-  	}
-			.nav > a {
-				display: block;
-				line-height: 30px;
-				text-decoration: none;
-				color: #000;
-				padding-left: 25px;
-				padding-top: 20px;
-				font-size: 20px;
-			}
-			.nav > a:hover {
-				background: rgba(0,0,0,.7);
-				color: #fff;
-				border-left: 5px solid #fff;
-				box-shadow: 0px 10px 10px;
-				padding-left: 40px;
-			}
-			.nav {
-				position: absolute;
-				width: 300px;
-				height: 0px;
-				transition: height 1s;
-				margin-left: 10px;
-				background: linear-gradient(to left top, #09203F, #fff, #724004);
-				overflow: hidden;
-			}
-			
-			#toggle:checked ~ nav {
-				height: 310px;
-			}
-			
-			
-			 #toggle:checked ~ .label-container > #label-1 {
-				color: transparent;
-			}
-			
-			#toggle:checked ~ .label-container > #label-2 {
-				font-size: 2.4em;				
-				line-height: 60px;				
-				cursor: pointer;
-				transition: .5s ease;
-				color: #fff;				
-				transition: 2s;					
-			}
-			
-			 /* buttons in menu*/
-			      /*btn-1*/
-			#btn-1 {
-				background: none;
-				border: none;
-				font-size: 20px;
-				padding-top: 15px;
-				padding-left: 18px;
-				font-family:Times New Roman;
-			}
-			.btn-1-body {
-				position: absolute;
-				width: 0px;
-				height: 90px;
-				background: transparent;				
-				margin-left: 110px;
-				margin-top: -30px;
-				overflow: hidden;
-				transition: width 1s
-			}					
-			.btn-1-body > a {
-				text-decoration: none;
-				color: #000;
-				font-size: 13px;
-				display: block;
-				padding-top: 10px;
-			}
-			.btn-1-body a:hover {
-				background: #000;
-				color: #fff;
-			}
-			#btn-1:hover > .btn-1-body {
-				width: 100px;
-				border: 1px solid black;
-			}
-			       /*btn-2*/
-			 #btn-2 {
-				background: none;
-				border: none;
-				font-size: 20px;
-				padding-top: 15px;
-				padding-left: 18px;
-				font-family: Times New Roman;
-			}
-			.btn-2-body {
-				position: absolute;
-				width: 0px;
-				height: 90px;
-				background: transparent;				
-				margin-left: 110px;
-				margin-top: -30px;
-				overflow: hidden;
-				transition: width 1s
-			}					
-			.btn-2-body > a {
-				text-decoration: none;
-				color: #000;
-				font-size: 13px;
-				display: block;
-				padding-top: 10px;
-			}
-			.btn-2-body a:hover {
-				background: #000;
-				color: #fff;
-			}
-			#btn-2:hover > .btn-2-body {
-				width: 100px;
-				border: 1px solid black;
-			}
-	    		/* menu end*/
-			#div1:target {
-         background: linear-gradient(to left bottom, #09203F, #fff, #724004 );
-         color: #f8f9f9;
-         padding: 10px;
-         transition-duration: 2s;
-         border: 1px solid black;
-      }  
-            
-               /*font*/
-			@font-face {
-				font-family: myFont;
-				src: url('font-1.ttf');
-			}
-					   /* bread crumbs*/
-					 
-					 .breadcrumbs {
-         background: #2A9292;    
-         width: 250px;    
-         margin-left: 15px; 
-         border-radius: 10px;            
-      }
-      .breadcrumbs ul {
-         margin: 0;
-         padding: 0;   
-         text-align: center;      
-      }
-      .breadcrumbs li {
-         display: inline-block;
-      }
-    
-      .breadcrumbs li > a {
-         color: #fff;
-         text-decoration: none;
-         border-bottom: 1px solid white;
-      }
-      .breadcrumbs li:last-child > a {
-         color: #fff;
-         text-decoration: none;
-         border: none;
-      }
-      
-   /*     image    gallery    */
-   
-       .image-container {
-         margin: 0 auto;
-         width: 80%;
-         box-shadow: 0 15px 30px rgba(0,0,0,0.30), 0 11px 8px rgba(0,0,0,0.22);
-         margin-bottom: 20px;
-         transition-duration: 1s;
-      }
-      .image-container:hover {
-         width: 90%;
-         box-shadow: 0 18px 36px rgba(0,0,0,0.30), 0 14px 11px rgba(0,0,0,0.22);
-      }
-      /* make the images responsive */
-      img {
-         width: 100%;
-         height: auto;
-         border-radius: 50px;
-      }
-      .image-description {
-         padding: 0 15px 15px 15px;
-         text-align: center;
-      }
-      
-      
-    
-	 	</style>
 	</head>
 	<body style="font-family:Times New Roman; margin:0">
-		     <! top begin>   
+		       <!-- top begin-->   
 			   <header style="position: fixed; margin-top: -22px"> 
     
-	  <div style=" letter-spacing:14px; background: linear-gradient(to top right, #09203F, #fff, #724004); color:#000; width:290px; height:50px;  padding-left:10px; font-size:25px; font-weight:bold; margin-top:22px; padding-top: 10px; font-family:myFont"> GAME ROCK </div>
+	  <div class="gamerock-div"> GAME ROCK </div>
 	  
 	     <div class="container">
       <input type="checkbox" id="toggle"> 
@@ -258,7 +35,7 @@
          <a href="index.html"> Home </a>
          <a href="#div1"> contact us </a>
          
-       <! btn-1>
+   <!-- btn-1-->
          <div class="btn-1-top">
          <button id="btn-1">
          	Games&nbsp;&nbsp;|&nbsp;&nbsp;+
@@ -269,7 +46,7 @@
          		</div>
          	 </button>
          	 </div>
-        <! btn-2>
+   <!-- btn-2-->
          <div class="btn-2-top">
          <button id="btn-2">Apps&nbsp;&nbsp;|&nbsp;&nbsp;+
          <div class="btn-2-body">
@@ -282,19 +59,19 @@
       </nav>  				
       </div>
 		</header>
-         <! top end >
+         <!-- top end -->
          
     <br/> <br/> <br/> <br/>
-         <!bread crumbs>        
+    
+         <!--bread crumbs start-->        
          <div class="breadcrumbs">
       <ul>
       	<li><a href="index.html">Home ⟩  </a></li>
       	<li><a href="games.html">Games ⟩  </a></li>
-         <li><a href="simulation.html">simulation  </a></li>
-         
+         <li><a href="simulation.html">simulation  </a></li>         
       </ul>
      </div>
-             <! end>
+         <!--bread crumbs end-->
              
         <! light box start>
             <br/>
@@ -303,42 +80,41 @@
        	 <! image 1>
       <div class="image-container" id="container1">
       	<p class="image-description"><span style="color:red; font-weight: bold">Minecraft version 1.19 for Andriod download</span> </p>
-         <a href="#image1"><img src="mc-image-1.jpg" /></a>
+         <a href="#image1"><img src="images/mc-image-1.jpg" /></a>
          <p class="image-description">Minecraft allows you to explore and blow your creativity without bounds. The game permits you to see yourself in different professions as you which, farmer, fisherman, traveller, cave explorer, builder and alot more. Interact with animals, mobs  <br/> <a href="mc.html">continue reading....</a></p>
       </div>
         <! image 2>
       <div class="image-container" id="container2">
       	<p class="image-description"><span style="color:red; font-weight:bold">Download Roblox for Andriod</span></p>
-         <a href="#image2"><img src="roblox-image-1.jpg" /></a>
+         <a href="#image2"><img src="images/roblox-image-1.jpg" /></a>
          <p class="image-description">a multi-user project is a survivalist whose originality lies in the fact that all three-dimensional worlds are created by the players themselves. In addition to the gameplay itself, the main idea is that every player can add something to the game, <br/> <a href="roblox.html">continue reading....</a> </p>
       </div>
        
-     <! footer > 
-        <footer style="background: linear-gradient(to right bottom, #09203F, #fff, #724004); ; height: 185px; font-family: monospace; margin-bottom: -7px">
+         <!-- footer --> 
+        <footer style="background:linear-gradient(to right bottom, #ffd89b, #19547b); height: 185px; font-family: monospace; margin-bottom: -7px">
 	<br/>
-	<h4 style="margin-left: 7px; padding-top: 10px"> © Copyright gamerock 2022-2023 | All Rights Reserved. </h4>
+	<h4 style="margin-left: 7px; padding-top: 10px"> © Copyright gamerock 2022-2024 | All Rights Reserved. </h4>
 	<br/>
-  <center>
-	<hr color="black" width="90%"/>
-	</center>
+  
+	<hr color="black" style="width:90%; margin:0 auto;"/>
 	<br/>
 	<p id="#p1" style="margin-left: 10px; font-size: 16px"><b> Contact us:</b> </p>
 	
 	
-	<!facebook icon>
+	<!--facebook icon-->
 	<div id="div1">
 	<a href="https://www.facebook.com/allenwill01" style="text-decoration: none">
-	<img src="facebook.png" style="width: 30px; height: 30px; margin-left: 55px; margin-top: 10px"> </img>
+	<img src="images/facebook.png" style="width: 30px; height: 30px; margin-left: 55px; margin-top: 10px"> </img>
 	</a>
 	
-	<!whatsapp icon>	
+	<!--whatsapp icon-->	
 	<a href="https://wa.me/+2349035427684" style="text-decoration: none">
-	<img src="whatsapp.png" style="width: 30px; height: 30px; margin-left: 30px"> </img>
+	<img src="images/whatsapp.png" style="width: 30px; height: 30px; margin-left: 30px"> </img>
 	</a>
 	
-	<!twitter icon>	
+	<!--twitter icon-->	
 	<a href="https://twitter.com/allen5tar" style="text-decoration: none">
-	<img src="twitter.png" style="width: 30px; height: 30px; margin-left: 20px"> </img>
+	<img src="images/twitter.png" style="width: 30px; height: 30px; margin-left: 20px"> </img>
 	</a>	
 </div>	
 	
@@ -347,6 +123,7 @@
 
         
 </footer>
+  
 
       
 		</body>
