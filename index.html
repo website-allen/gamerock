@@ -32,9 +32,10 @@
 	<link rel="stylesheet" type="text/css" href="style.css"/>
 	
 		</head>
-		<body style="font-family:Times New Roman; margin:0px">
+		<body>
 			   <!-- top begin-->   
-			   <header style="position: fixed; margin-top: -22px"> 
+			   <header style="position: fixed; margin-top: -22px; z-index:99; 
+"> 
     
 	  <div class="gamerock-div"> GAME ROCK </div>
 	  
@@ -44,7 +45,7 @@
        <label for="toggle" id="label-1">&#9781; </label>
        <label for="toggle" id="label-2">&#10005; </label>       
        </div>
-      <nav class="nav">
+<nav class="nav">
          <a href="index.html"> Home </a>
          <a href="contact-us.html"> contact us </a>
          
@@ -69,94 +70,152 @@
          </button>       
          </div>
          <a href="supportus.html">Support Us</a>
-      </nav>  				
+         
+<div id="night-day-container">
+<input type="checkbox" id="night-day-toggle">
+	   <label for="night-day-toggle" id="night-mode">&#9789; 
+	   </label>
+    <label for="night-day-toggle" id="day-mode">&#x263C;
+    </label>
+</div>         
+</nav>  				
       </div>
 		</header>
          <!-- top end -->
- <br/>  <br/>   <br/>  <br/>    
-   
-   
+ <br/> <br/>  <br/>    
+
     <!--bread crumbs start-->        
-         <div class="breadcrumbs" style="width:90px;">
-      <ul>
-      	<li><a href="index.html">Home ⟩  </a></li>
+         <div class="breadcrumbs" >
+  <ul>
+ 	<li><a href="index.html">Home </a> 	</li> </ul>
       	
      </div> <br/>
-         <!--bread crumbs end-->   
+         <!--bread crumbs end--> 
+   
+<img id="bg-image" src="images/bg-image.jpg"/>
+           
    <div style="border:none; width:200px; overflow:hidden; height:200px; object-fit:contain; margin: 0 auto;">
-    <img src="images/logo-1.jpg" style=" border-radius:100px; margin-top:-0px; width:95%; height:95%"/>
+    <img src="images/logo-1.jpg" style=" border-radius:100px; margin-top:-30px; width:95%; height:95%; scale:0.7; filter:brightness(0.5);"/>
  </div>   
-    <p style="padding:15px; margin-top:-0px;"> Welcome to Game Rock, the nest of exclusive games. Here on game rock, Our niche is on games, this is easy to deduce lol. We also make contents about useful apps.</p>
-    <hr color:"black" style="width:90%; margin:0 auto;"/> <br/>
+    <p style="padding:15px; margin-top:-50px; color:#ccc;"> 
+Hey there, Gamer! 👾
+
+Get ready to dive into the ultimate gaming experience! At Gamerock, we’re all about celebrating the thrill of gaming and connecting with fellow players. Whether you're a casual player or a hardcore gamer, we've got something for everyone!
+<br/><br/>
+Explore our vast library of games, discover the latest gaming news, and stay updated on trends that matter to you. Don’t forget to check out our community forums where you can share tips, tricks, and your favorite gaming moments!
+<br/><br/>
+So grab your controller, put on your headset, and let’s embark on this adventure together. Your next epic gaming experience awaits!
+
+Happy gaming! 🕹️
+</p>
+<img src="images/bg-image-2.png" id="bg-image-2"/>
+<!--3D image slideshow start-->
+<section>
+<div class="content">
+<div class="slider-content">
+	  <figure class="shadow"><img src="images/nova3-image-1.jpg"/>
+	  <a href="nova3.html">View →</a>
+	 </figure>
+	 
+	 <figure class="shadow"><img src="images/carx-image-2.jpg"/>
+	 <a href="carx.html">View →</a>
+	 </figure>
+	 
+	 <figure class="shadow"><img src="images/roblox-image-2.jpg"/>
+	 <a href="roblox.html">View →</a>
+	 </figure>
+	 
+	 <figure class="shadow"><img src="images/mc-image-2.jpg"/>
+	 <a href="mc.html">View →</a>
+	 </figure>
+	 
+	 <figure class="shadow"><img src="images/needforspeed-image-1.jpg"/>
+	 <a href="#">View →</a>
+	 </figure>
+	 
+	 <figure class="shadow"><img src="images/efootball-image-1.jpg"/>
+	 <a href="#">View →</a>
+	 </figure>
+	 
+	 <figure class="shadow"><img src="images/novalegacy-image-6.jpg"/>
+	 	<a href="#">View →</a> 
+	 </figure>
+	 
+  <figure class="shadow"><img src="images/skycombat-image-2.jpg"/>
+  	<a href="skycombat.html">View →</a> 
+	 </figure>	 
+</div>		
+</div>
+</section>
+<!--3D image slideshow end-->
+
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <hr  style="width:90%; margin:0 auto;"/> <br/> <br/>
     
         <!--Hot games START -->
- <div style="border: .2px solid black; background: linear-gradient(to right bottom, #F0E0F9, #DAF8F9 ); width:90%; margin:0 auto; border-radius:15px 0px 15px 0px">
+ <div id="div-hotgames">
     <h6 style="margin-left: 20px; color: #031e53; font-size: 20px; padding: 20px"><b>Hot games: </b></h6>
  
         <!-- roblox-->
-    <a href="roblox.html" style="text-decoration: none; color: #6F500B">
-<div style="margin-bottom: 50px; margin-left: 10px">
-<img src="images/roblox-image-1.jpg" style="width: 100px; height: 90px; float: left; margin-right: 10px; border-radius: 5px "/> &nbsp; &nbsp;
+    <a href="roblox.html">
+<div class="hotgames">
+<img src="images/roblox-image-1.jpg"/> &nbsp; &nbsp;
   <h3>  
   	Download 
   	roblox for Andriod
   	</h3>
-</div>
-      </a>
+</div>    </a>
       
          <!--carX street-->
-      <a href="carx.html" style="text-decoration: none; color: #6F500B">
-<div style="margin-bottom: 50px; margin-left: 10px">
-<img src="images/carx-image-1.jpg" style="width: 100px; height: 90px; float: left; margin-right: 10px; border-radius: 5px "/> &nbsp; &nbsp;
+ <a href="carx.html">
+<div class="hotgames">
+<img src="images/carx-image-1.jpg"/> &nbsp; &nbsp;
   <h3>  
   	Download 
   	CarX Street for Andriod
   	</h3>
-</div>
-      </a>
+</div>   </a>
       <!--efootball-->
       
-      <a href=".html" style="text-decoration: none; color: #6F500B">
-<div style="margin-bottom: 50px; margin-left: 10px">
-<img src="images/efootball-image-1.jpg" style="width: 100px; height: 90px; float: left; margin-right: 10px; border-radius: 5px "/> &nbsp; &nbsp;
+ <a href=".html" >
+<div class="hotgames">
+<img src="images/efootball-image-1.jpg"/> &nbsp; &nbsp;
   <h3>  
   	Download 
   	eFootball 2023 for Andriod
   	</h3>
-</div>
-
+</div>   </a>
  </div>       
-      </a> <br/>
-        <!-- hot games end-->
-    <hr color"black" style="width:90%; margin:0 auto;"/> <br/>
+       <br/>
+       <!-- hot games end-->
+    <hr style="width:90%; margin:0 auto;"/> <br/>
     
      <!--Exclusive games start  -->
-  <div style="border: .2px solid black; background: linear-gradient(to right bottom, #F0E0F9, #DAF8F9 ); width:90%; margin:0 auto; border-radius:15px 0px 15px 0px">
+  <div id="div-exclusivegames">
 <h6 style="margin-left: 20px; color: #031e53; font-size: 20px; padding: 20px"><b>Exclusive games: </b></h6>
         <!-- nova 2-->
-<a href="nova2.html" style="text-decoration: none; color: #6F500B">
-<div style="margin-bottom: 50px; margin-left: 10px">
-<img src="images/nova2-image-1.jpg" style="width: 100px; height: 90px; float: left; margin-right: 10px; border-radius: 5px "/> &nbsp; &nbsp;
+<a href="nova2.html">
+<div class="exclusivegames">
+<img src="images/nova2-image-1.jpg"/> &nbsp; &nbsp;
   <h3>  
   	Download 
   	N.O.V.A 2 for Andriod
   	</h3>
-</div>
-      </a>
+</div>   </a>
         <!-- nova 3-->
-<a href="nova3.html" style="text-decoration: none; color: #6F500B">
-<div style="margin-bottom: 50px; margin-left: 10px">
-<img src="images/nova3-image-1.jpg" style="width: 100px; height: 90px; float: left; margin-right: 10px; border-radius: 5px "/> &nbsp; &nbsp;
+<a href="nova3.html">
+<div class="exclusivegames">
+<img src="images/nova3-image-1.jpg"/> &nbsp; &nbsp;
   <h3>  
   	Download 
   	N.O.V.A 3 for Andriod
   	</h3>
-</div>
-      </a>
+</div>    </a>
         <!-- minecraft-->
       <a href="mc.html" style="text-decoration: none; color: #6F500B">
-<div style="margin-bottom: 50px; margin-left: 10px">
-<img src="images/mc-image-1.jpg" style="width: 100px; height: 90px; float: left; margin-right: 10px; border-radius: 5px "/> &nbsp; &nbsp;
+<div class="exclusivegames">
+<img src="images/mc-image-1.jpg"/> &nbsp; &nbsp;
   <h3>  
   	Download 
   	Minecraft 1.19 for Andriod
@@ -164,9 +223,9 @@
 </div>
       </a>
       <!-- sky combat-->
-      <a href="skycombat.html" style="text-decoration: none; color: #6F500B">
-<div style="margin-bottom: 50px; margin-left: 10px">
-<img src="images/skycombat-image-1.jpg" style="width: 100px; height: 90px; float: left; margin-right: 10px; border-radius: 5px "/> &nbsp; &nbsp;
+  <a href="skycombat.html">
+<div class="exclusivegames">
+<img src="images/skycombat-image-1.jpg"/> &nbsp; &nbsp;
   <h3>  
   	Download 
    Sky Combat for Andriod & ios
@@ -174,60 +233,54 @@
 </div>
       </a>
       <!-- nova legacy-->
-      <a href="novalegacy.html" style="text-decoration: none; color: #6F500B">
-<div style="margin-bottom: 50px; margin-left: 10px">
-<img src="images/novalegacy-image-1.jpg" style="width: 100px; height: 90px; float: left; margin-right: 10px; border-radius: 5px "/> &nbsp; &nbsp;
+      <a href="novalegacy.html" >
+<div class="exclusivegames">
+<img src="images/novalegacy-image-1.jpg"/> &nbsp; &nbsp;
   <h3>  
   	Download 
    N.O.V.A Legacy for Andriod & ios
   	</h3>
 </div>   </a> 
-
 </div>
       <!--Exclusive games END  -->
-   <br/>   <hr color"black" style="width:90%; margin:0 auto"/> <br/>
+   <br/>   <hr color="black" style="width:90%; margin:0 auto"/> <br/>
    
       <!--Game tools start  -->
-<div style="border: .2px solid black; background: linear-gradient(to right bottom, #F0E0F9, #DAF8F9 ); width:90%; margin:0 auto; border-radius:15px 0px 15px 0px; height:380px; overflow:hidden hidden"> 
-      <h6 style="margin-left: 20px; color: #031e53; font-size: 20px; padding: 20px"><b>Game Tools: </b></h6>
+<div id="div-gametools"> 
+      <h6 style="margin-left: 20px; color: #031e53; font-size: 20px; padding: 20px; width:100%;"><b>Game Tools: </b></h6> 
        <!--tool 1-->
-      <a href="gg.html" style="text-decoration: none; color: #6F500B">
-<div style="margin-bottom: 50px; margin-left: 30px; width: 50px; ">
-<img src="images/gg-image-1.jpg" style="width: 100px; height: 90px; margin-right: 10px; border-radius: 5px; box-shadow: 0px 10px 20px black "/> &nbsp;
+ <a href="gg.html">
+<div class="gametools">
+<img src="images/gg-image-1.jpg"/> &nbsp;
   <figcaption>Game Guardian</figcaption>
-</div>
-      </a> <br/>
+</div>   </a> <br/>
             
       <!--tool 2-->
-      <a href="mt.html" style="text-decoration: none; color: #6F500B">
-<div style="margin-bottom:50px; margin-left: 180px; width: 50px; margin-top: -210px">
-<img src="images/mt-image-1.jpg" style="width: 100px; height: 90px; margin-right: 10px; border-radius: 5px; box-shadow: 0px 10px 20px black "/> &nbsp; &nbsp;
+      <a href="mt.html" >
+<div class="gametools">
+<img src="images/mt-image-1.jpg"/> &nbsp; &nbsp;
  <figcaption> Mt manager </figcaption>
-</div>
-      </a> <br/>
+</div>    </a> <br/>
             
       <!--tool3-->
-      <a href="f1vm.html" style="text-decoration: none; color: #6F500B">
-<div style="margin-bottom: 50px; margin-left: 30px; width: 50px; margin-top: -20px">
-<img src="images/f1vm-image-1.jpg" style="width: 100px; height: 90px; margin-right: 10px; border-radius: 5px; box-shadow: 0px 10px 20px black "/> &nbsp; &nbsp;
+      <a href="f1vm.html">
+<div class="gametools">
+<img src="images/f1vm-image-1.jpg"/> &nbsp; &nbsp;
   <figcaption> 	F1 vm </figcaption>
-</div>
-      </a> <br/>
+</div>    </a> <br/>
       
       
-      <!--tool 4-->
-      <a href="ll2.html" style="text-decoration: none; color: #6F500B">
-<div style="margin-bottom: 50px; margin-left: 180px; width: 50px; margin-top: -190px">
-<img src="images/ll2-image-1.jpg" style="width: 100px; height: 90px; margin-right: 10px; border-radius: 5px; box-shadow: 0px 10px 20px black "/> &nbsp; &nbsp;
+      <!--tool 4-->      
+ <a href="ll2.html">
+<div class="gametools">
+<img src="images/ll2-image-1.jpg" /> &nbsp; &nbsp;
   <figcaption> ll2CppDumper	</figcaption>
-</div>      </a>
-  
-
+</div>   </a>  
   </div> 
         <!--Game tools END  -->           
       <br/>   <hr color"black" style="width:90%; margin:0 auto"/> <br/>
       
-          <!--apps-->
+       <!--apps start-->
           
 <div style="border: .2px solid black; background:linear-gradient(to right bottom, #F0E0F9, #DAF8F9 ); width:90%; margin:0 auto; border-radius:15px 0px 15px 0px; overflow:scroll hidden; height:200px;">          
     <h6 style="color: #031e53; font-size: 20px; padding: 20px;"><b>Apps: </b></h6>
@@ -265,11 +318,12 @@
  </div> 
  </a>          
    </div>   </div> <br/>
+   <!--apps end-->
    
           <!-- footer --> 
-        <footer style="background:linear-gradient(to right bottom, #ffd89b, #19547b); height: 185px; font-family: monospace; margin-bottom: -7px">
+        <footer>
 	<br/>
-	<h4 style="margin-left: 7px; padding-top: 10px"> © Copyright gamerock 2022-2024 | All Rights Reserved. </h4>
+	<h4 style="margin-left: 7px; padding-top: 10px"> © Copyright gamerock 2022-2025 | All Rights Reserved. </h4>
 	<br/>
   
 	<hr color="black" style="width:90%; margin:0 auto;"/>
@@ -279,17 +333,17 @@
 	
 	<!--facebook icon-->
 	<div id="div1">
-	<a href="https://www.facebook.com/allenwill01" style="text-decoration: none">
+	<a href="https://www.facebook.com/allenwill01">
 	<img src="images/facebook.png" style="width: 30px; height: 30px; margin-left: 55px; margin-top: 10px"> </img>
 	</a>
 	
 	<!--whatsapp icon-->	
-	<a href="https://wa.me/+2349035427684" style="text-decoration: none">
+	<a href="https://wa.me/+2349035427684">
 	<img src="images/whatsapp.png" style="width: 30px; height: 30px; margin-left: 30px"> </img>
 	</a>
 	
 	<!--twitter icon-->	
-	<a href="https://twitter.com/allen5tar" style="text-decoration: none">
+	<a href="https://twitter.com/allen5tar">
 	<img src="images/twitter.png" style="width: 30px; height: 30px; margin-left: 20px"> </img>
 	</a>	
 </div>	

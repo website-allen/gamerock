@@ -216,9 +216,10 @@ body:has(#night-day-toggle:checked) {
 					 
 					 .breadcrumbs {
          background: #2A9292;                
-         margin-left: 15px; 
-         margin-right: 25px;
-         border-radius: 10px;            
+         border-radius: 10px;
+         margin: 0 10px 10px 10px;
+         max-width: 95%;
+         display: inline-block;          
       }
       .breadcrumbs ul {
          margin: 0;
@@ -227,12 +228,14 @@ body:has(#night-day-toggle:checked) {
       }
       .breadcrumbs li {
          display: inline;
+         
       }
     
       .breadcrumbs li > a {
          color: #fff;
          text-decoration: none;
          border-bottom: 1px solid white;
+         line-height: 20px;
       }
       .breadcrumbs li:last-child > a {
          color: #fff;
@@ -412,6 +415,8 @@ body:has(#night-day-toggle:checked) {
 	  width:90%;
 	  margin:0 auto;  
 	  border-radius:15px 0px 15px 0px;
+	  overflow-Y: scroll;
+	  max-height: 500px;
 }
 .hotgames {
 	  margin-bottom: 50px;  
@@ -486,6 +491,22 @@ body:has(#night-day-toggle:checked) {
 }
 /*Gametools end */
 
+/*download-btn1 start */
+.download-btn1 {
+	 background-color: red; 
+	 color: white; 
+	 font-family: Times New Roman; 
+	 width: 65px; 
+	 height: 40px; 
+	 border: none; 
+	 border-radius: 5px; 
+	 font-size: 18px; 
+	 box-shadow: 0px 10px 10px black;  
+	 cursor: pointer; 
+	 margin-left: 140px; 
+	 margin-top: -50px;
+}
+/*download-btn1 end */
      /*share on start */ 
 .div-shareon {
 	  text-align: center;
