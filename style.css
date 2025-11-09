@@ -26,7 +26,8 @@
 				line-height: 60px;				
 				cursor: pointer;
 				color: #fff;				
-				transition: 2s;					
+				transition: 2s;	
+				padding-right: 12px;				
 			}		
 			#label-2 {
 				color: transparent;
@@ -217,7 +218,7 @@ body:has(#night-day-toggle:checked) {
 					 .breadcrumbs {
          background: #2A9292;                
          border-radius: 10px;
-         margin: 0 10px 10px 10px;
+         margin: 0 10px 10px 0px;
          max-width: 95%;
          display: inline-block;          
       }
@@ -492,19 +493,23 @@ body:has(#night-day-toggle:checked) {
 /*Gametools end */
 
 /*download-btn1 start */
+ .a-download-btn1 {
+	margin: 0 auto;
+	display: block;
+	border: 0px solid red;
+	width: 30%;
+	text-align: center;
+}
 .download-btn1 {
-	 background-color: red; 
-	 color: white; 
-	 font-family: Times New Roman; 
-	 width: 65px; 
-	 height: 40px; 
+	 background: linear-gradient(to right bottom, aqua, #ccc, pink); 
+	 color: #000;
+	 padding: 19px;
 	 border: none; 
-	 border-radius: 5px; 
+	 border-radius: 50% / 100%; 
 	 font-size: 18px; 
-	 box-shadow: 0px 10px 10px black;  
+	 box-shadow: 0 0 15px rgba(0, 0, 0, .25);
 	 cursor: pointer; 
-	 margin-left: 140px; 
-	 margin-top: -50px;
+	 font-weight: 700;
 }
 /*download-btn1 end */
      /*share on start */ 
@@ -552,17 +557,114 @@ body:has(#night-day-toggle:checked) {
      /*share on end */  
      
 /*div-brokenlink start */
-#div-brokenlink {
-	  width: 310px; 
-	  height: 50px; 
+.div-brokenlink {
+	  width: 85%; 
+	  padding: 10px;
 	  border: none; 
 	  background:linear-gradient(to right bottom, #A9E2EF, #E3B9F0);   
-	  padding: 10px; 
 	  border-radius: 5px; 
 	  color:#000; 
-	  margin:0 auto;
+	  margin: 15px auto;
 }
 /*div-brokenlink end*/
+
+/*===simple CSS only image slider start===*/
+.slider{
+    width: 60%;
+    aspect-ratio: 9 / 16;
+    margin: 20px auto;
+    border: 0px solid green;
+  }
+
+  .track{
+  	  border: 0px solid red;
+  	  overflow: hidden;
+    display: flex;
+    width:100%;
+    aspect-ratio: 9 / 16;
+    align-items: center;
+  }
+
+  .slider:hover .track img{
+    animation-play-state: paused; 
+    width: 80%;
+  }
+  .slider:hover {
+  	width: 70%;
+  }
+  .track img{
+    width: 100%;
+    height: 100%;
+    animation: slide 16s infinite;
+    object-fit: contain;
+    flex: 0 0 100%;
+    display: block;
+  }
+
+  @keyframes slide{
+    0%, 20%   { transform: translateX(0%); }
+    25%, 45%  { transform: translateX(-100%); }
+    50%, 70%  { transform: translateX(-200%); }
+    75%, 95%  { transform: translateX(-300%); }
+    100%      { transform: translateX(0%); }
+  }
+ /*pagination bullets*/
+.slider::after {
+  content: '';
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: #ccc;
+  border-radius: 50%;
+  left: 30%;
+  box-shadow:
+    20px 0 #ccc,
+    40px 0 #ccc,
+    60px 0 #ccc;
+ position: relative;
+ animation: bullet 16s infinite;
+}
+
+/*Animate bullet to reflect slide */
+@keyframes bullet {
+  /* Slide 1 active (0–25%) */
+  0%, 24.9% {
+    background: #007bff;  /* bullet 1 */
+    box-shadow:
+      20px 0 #ccc,
+      40px 0 #ccc,
+      60px 0 #ccc;
+  }
+  /* Slide 2 active (25–50%) */
+  25%, 49.9% {
+    background: #ccc;
+    box-shadow:
+      20px 0 #007bff,
+      40px 0 #ccc,
+      60px 0 #ccc;
+  }
+  /* Slide 3 active (50–75%) */
+  50%, 74.9% {
+    background: #ccc;
+    box-shadow:
+      20px 0 #ccc,
+      40px 0 #007bff,
+      60px 0 #ccc;
+  }
+  /* Slide 4 active (75–100%) */
+  75%, 100% {
+    background: #ccc;
+    box-shadow:
+      20px 0 #ccc,
+      40px 0 #ccc,
+      60px 0 #007bff;
+  }
+}
+.slider:hover::after {
+	animation-play-state: paused;
+}
+/*===simple CSS only image slider end===*/ 
+
      
 /*footer start */
 	footer {
