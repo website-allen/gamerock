@@ -1,0 +1,69 @@
+@media screen and (min-width: 1024px) {
+    .label-container {
+        display: none;
+    }
+    .nav {
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        top: 0px;
+        background: transparent;
+        overflow: visible;
+
+    }
+
+    .container {
+        width: 69%;
+        overflow: visible;
+        height: 100%;
+    }
+
+    .nav > a {
+        display: inline;
+    }
+
+    .btn-1-top, .btn-2-top {
+        display: inline;
+    }
+
+    .btn-1-body, .btn-2-body {
+        height: 0;
+        transition: height 1s;
+        top: 60px;
+        margin: 0;
+        z-index: 99;
+        position: absolute;
+        background:linear-gradient(to right bottom, #ffdeb4, #4a7ea0);
+        border-radius: 5px;
+    }
+   
+    #btn-1:hover > .btn-1-body {
+        height: 90px;
+    }
+
+    #btn-2:hover > .btn-2-body {
+        height: 90px;
+    }
+
+    .gametools-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .gametools-wrapper > a:nth-child(3n+1) {
+	border: 0px solid blue;
+	grid-column: 1;
+    }
+
+    .gametools-wrapper > a:nth-child(3n+2) {
+	border: 0px solid rgb(30, 104, 7);
+	grid-column: 2;
+    }
+
+    .gametools-wrapper > a:nth-child(3n) {
+	border: 0px solid rgb(255, 0, 0);
+	grid-column: 3;
+    }
+
+    
+     }
