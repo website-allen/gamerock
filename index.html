@@ -20,7 +20,7 @@
 	 <meta property="og:type" content="website"/>
 	 <meta property="og:title" content="Game Rock"/>
 	 <meta property="og:description" content="Game Rock the pride rock for all games"/>
-	 <meta property="og:image" content="images/logo-1.jpg"/>
+	 <meta property="og:image" content="images/gr-logo-1.png"/>
 	 <link rel="canonical" href="https://gamerock.com.ng/"/>
 	 <meta property="og:url" content="https://gamerock.com.ng/"/>
 	     <!--meta tags end-->
@@ -28,9 +28,17 @@
 	 <!--search console verification-->
 <meta name="google-site-verification" content="UdVbkAQAGUxJbycRb059xZb2CKpNKaP8UxvFuUOwYUw" />
 	        <!-- end-->
-	        
-	<link rel="stylesheet" type="text/css" href="style.css"/>
+
+			<!--css files-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">    
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/responsive.css"/>
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
 	
+<!--js files-->
+<script src="js/script.js" defer></script>
+
+
 <link rel="icon" type="image/png" href="https://gamerock.com.ng/images/gamerock-image-2.png">
 <link rel="shortcut icon" href="https://gamerock.com.ng/images/gamerock-image-2.png" type="image/png">
 <link rel="apple-touch-icon" href="https://gamerock.com.ng/images/gamerock-image-2.png">
@@ -47,53 +55,51 @@
 		</head>
 		<body>
 			   <!-- top begin-->   
-			   <header style="position: fixed; margin-top: -22px; z-index:99; 
-"> 
+<header id="header"> 
     
 	  <div class="gamerock-div"> GAME ROCK </div>
 	  
-	     <div class="container">
+  <div class="container">
       <input type="checkbox" id="toggle"> 
       <div class="label-container">
        <label for="toggle" id="label-1">&#9781; </label>
        <label for="toggle" id="label-2">&#10005; </label>       
        </div>
-<nav class="nav">
+    <nav class="nav">
          <a href="index.html"> Home </a>
          <a href="contact-us.html"> contact us </a>
          
-   <!-- btn-1-->
-         <div class="btn-1-top">
+              <!-- btn-1--> 
+        <div class="btn-1-top">
          <button id="btn-1">
          	Games&nbsp;&nbsp;|&nbsp;&nbsp;+
          	<div class="btn-1-body">
          		<a href="action.html">Action</a>
          		<a href="simulation.html">Simulation</a>
          		<a href="racing.html">Racing</a>
-         		</div>
-         	 </button>
-         	 </div>
-   <!-- btn-2-->
-         <div class="btn-2-top">
+            </div>
+         </button>
+        </div>
+
+                   <!-- btn-2-->
+        <div class="btn-2-top">
          <button id="btn-2">Apps&nbsp;&nbsp;|&nbsp;&nbsp;+
-         <div class="btn-2-body">
-         	<a href="editing.html">Editing</a>
-         	<a href="tools.html">Tools</a>         
+            <div class="btn-2-body">
+         	   <a href="editing.html">Editing</a>
+         	   <a href="tools.html">Tools</a>         
          	</div>
          </button>       
-         </div>
-         <a href="supportus.html">Support Us</a>
+        </div>
+        <a href="supportus.html">Support Us</a>
          
-<div id="night-day-container">
-<input type="checkbox" id="night-day-toggle">
-	   <label for="night-day-toggle" id="night-mode">&#9789; 
-	   </label>
-    <label for="night-day-toggle" id="day-mode">&#x263C;
-    </label>
-</div>         
-</nav>  				
-      </div>
-		</header>
+      <div id="night-day-container">
+        <input type="checkbox" id="night-day-toggle">
+	    <label for="night-day-toggle" id="night-mode">&#9789; </label>
+        <label for="night-day-toggle" id="day-mode">&#x263C; </label>
+      </div>         
+    </nav>  				
+  </div>
+</header>
          <!-- top end -->
  <br/> <br/>  <br/>    
 
@@ -123,7 +129,7 @@ Happy gaming! 🕹️
 </p>
 <img src="images/bg-image-2.png" id="bg-image-2"/>
 <!--3D image slideshow start-->
-<section>
+<section id="slider-section">
 <div class="content">
 <div class="slider-content">
 	  <figure class="shadow"><img src="images/nova3-image-1.jpg"/>
@@ -163,12 +169,12 @@ Happy gaming! 🕹️
 <!--3D image slideshow end-->
 
 
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-    <hr  style="width:90%; margin:0 auto;"/> <br/> <br/>
+
+    <hr  style="width:90%; margin:0 auto 100px auto;"/> <br/> <br/>
     
         <!--Hot games START -->
  <div id="div-hotgames">
-    <h6 style="margin-left: 20px; color: #031e53; font-size: 20px; padding: 20px"><b>Hot games: </b></h6>
+    <h6 class="basic-h6"><b>Hot games: </b></h6>
  
         <!-- roblox-->
     <a href="roblox.html">
@@ -204,9 +210,10 @@ Happy gaming! 🕹️
        <!-- hot games end-->
     <hr style="width:90%; margin:0 auto;"/> <br/>
     
-     <!--Exclusive games start  -->
+     
+	 <!--Exclusive games start-->
   <div id="div-exclusivegames">
-<h6 style="margin-left: 20px; color: #031e53; font-size: 20px; padding: 20px"><b>Exclusive games: </b></h6>
+<h6 class="basic-h6"><b>Exclusive games: </b></h6>
         <!-- nova 2-->
 <a href="nova2.html">
 <div class="exclusivegames">
@@ -260,27 +267,28 @@ Happy gaming! 🕹️
    
       <!--Game tools start  -->
 <div id="div-gametools"> 
-      <h6 style="margin-left: 20px; color: #031e53; font-size: 20px; padding: 20px; width:100%;"><b>Game Tools: </b></h6> 
+      <h6 class="basic-h6"><b>Game Tools: </b></h6>
+<div class="gametools-wrapper">
        <!--tool 1-->
  <a href="gg.html">
 <div class="gametools">
 <img src="images/gg-image-1.jpg"/> &nbsp;
   <figcaption>Game Guardian</figcaption>
-</div>   </a> <br/>
+</div>   </a> 
             
       <!--tool 2-->
       <a href="mt.html" >
 <div class="gametools">
 <img src="images/mt-image-1.jpg"/> &nbsp; &nbsp;
  <figcaption> Mt manager </figcaption>
-</div>    </a> <br/>
+</div>    </a> 
             
       <!--tool3-->
       <a href="f1vm.html">
 <div class="gametools">
 <img src="images/f1vm-image-1.jpg"/> &nbsp; &nbsp;
   <figcaption> 	F1 vm </figcaption>
-</div>    </a> <br/>
+</div>    </a> 
       
       
       <!--tool 4-->      
@@ -289,76 +297,98 @@ Happy gaming! 🕹️
 <img src="images/ll2-image-1.jpg" /> &nbsp; &nbsp;
   <figcaption> ll2CppDumper	</figcaption>
 </div>   </a>  
+  </div>
   </div> 
         <!--Game tools END  -->           
-      <br/>   <hr color"black" style="width:90%; margin:0 auto"/> <br/>
+      <br/>   <hr color="black" style="width:90%; margin:0 auto"/> <br/>
       
        <!--apps start-->
           
-<div style="border: .2px solid black; background:linear-gradient(to right bottom, #F0E0F9, #DAF8F9 ); width:90%; margin:0 auto; border-radius:15px 0px 15px 0px; overflow:scroll hidden; height:200px;">          
+<div id="apps-tools">          
     <h6 style="color: #031e53; font-size: 20px; padding: 20px;"><b>Apps: </b></h6>
-         
+  <div class="gametools-wrapper">       
     		<!-- Cap cut-->   	
-    <a href=".html" style="text-decoration:none; color: #824300">
-    	 <div style="width:100px; height:100px; margin-left: 30px; margin-top:-15px; background:none;" >
-    	 	<img src="images/capcut-image-1.jpg" style="width: 100px; height: 90px; float: left; margin-right: 10px; border-radius: 5px "/> &nbsp; <figcaption>Cap cut for Andriod
-    	 	</figcaption>  	     
- </div> 
- </a>    <br/>
+        <a href=".html">
+    	 <div class="gametools apps">
+    	 	<img src="images/capcut-image-1.jpg"/> &nbsp; <figcaption>Cap cut for Andriod </figcaption>  	     
+         </div> 
+        </a>   
  
-        <!--music downloader-->      
-      <a href="fzstudios.html" style="text-decoration: none; color: #6F500B">
-    	 <div style="height:100px; width: 100px;  margin-left: 180px; margin-top:-120px; background:none;" >
-    	 	<img src="images/fz-img-0.jpg" style="width: 100px; height: 90px; float: left; margin-right: 10px; border-radius: 5px "/> &nbsp;
-  <figcaption>FzStudioX</figcaption>  	     
- </div> 
- </a>    
+        <!--fz studio x-->      
+        <a href="fzstudios.html">
+    	 <div class="gametools apps">
+    	 	<img src="images/fz-img-0.jpg"/> &nbsp;
+            <figcaption>FzStudioX</figcaption>  	     
+         </div> 
+        </a>    
             
       <!--Calc ES-->
-      <a href=".html" style="text-decoration: none; color: #6F500B">
-    	 <div style="width: 100px;  margin-left: 350px; margin-botttom: 100px; margin-top:-100px; background:none;" >
-    	 	<img src="images/calces-image-1.jpg" style="width: 100px; height: 90px; float: left; margin-right: 10px; border-radius: 5px "/>&nbsp;
-  <figcaption>Calc Es for Andriod 
-   </figcaption>  	     
- </div> 
- </a>          
+        <a href=".html">
+    	 <div class="gametools apps">
+    	 	<img src="images/calces-image-1.jpg"/>&nbsp;
+            <figcaption>Calc Es for Andriod </figcaption>  	     
+         </div> 
+        </a>          
            
       <!-- Pics art-->  
-      <a href=".html" style="text-decoration: none; color: #6F500B">
-    	 <div style="width:100px;  margin-left: 515px; margin-botttom: 100px; margin-top:-140px; background:none;" >
-    	 	<img src="images/picsart-image-1.jpg" style="width: 100px; height: 90px; float: left; margin-right: 10px; border-radius: 5px "/> &nbsp;
-  <figcaption> Pics art pro for Andriod </figcaption>  	     
- </div> 
- </a>          
-   </div>   </div> <br/>
+        <a href=".html">
+    	 <div class="gametools apps">
+    	 	<img src="images/picsart-image-1.jpg"/> &nbsp;
+            <figcaption> Pics art pro for Andriod </figcaption>  	     
+         </div> 
+        </a> 
+
+   </div>         
+   </div>
    <!--apps end-->
    
           <!-- footer --> 
         <footer>
 	<br/>
-	<h4 style="margin-left: 7px; padding-top: 10px"> © Copyright gamerock 2022-2025 | All Rights Reserved. </h4>
+	<h4> © Copyright gamerock 2022-<script type="text/javascript">document.write(new Date().getFullYear());</script> | All Rights Reserved. </h4>
 	<br/>
-  
+    <h4>Designed and developed by<a href="">Otomee</a></h4>
+	<br/>
 	<hr color="black" style="width:90%; margin:0 auto;"/>
 	<br/>
 	<p id="#p1" style="margin-left: 10px; font-size: 16px"><b> Contact us:</b> </p>
 	
 	
+<div id="div1">
 	<!--facebook icon-->
-	<div id="div1">
 	<a href="https://www.facebook.com/allenwill01">
-	<img src="images/facebook.png" style="width: 30px; height: 30px; margin-left: 55px; margin-top: 10px"> </img>
+	<i class="fa fa-facebook"></i>
 	</a>
 	
 	<!--whatsapp icon-->	
 	<a href="https://wa.me/+2349035427684">
-	<img src="images/whatsapp.png" style="width: 30px; height: 30px; margin-left: 30px"> </img>
+	<i class="fa fa-whatsapp"></i>
 	</a>
 	
 	<!--twitter icon-->	
 	<a href="https://twitter.com/allen5tar">
-	<img src="images/twitter.png" style="width: 30px; height: 30px; margin-left: 20px"> </img>
-	</a>	
+	<i class="fa fa-x"></i>
+	</a>
+	
+	<!-- icon linkedin-->	
+	<a href="">
+	<i class="fa fa-linkedin"></i>
+	</a>
+	
+	<!--email icon-->	
+	<a href="">
+	<i class="fa fa-gmail"></i>
+	</a>
+
+	<!--instagram icon-->	
+	<a href="">
+	<i class="fa fa-instagram"></i>
+	</a>
+
+	<!--tiktok icon-->	
+	<a href="">
+	<i class="fa fa-tiktok"></i>
+	</a>
 </div>	
 	
 <br />
