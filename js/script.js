@@ -55,3 +55,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 /*auto-close header when any link or mode is clicked end*/
+
+// Remove .html from the URL bar without reloading the page
+if (window.location.pathname.endsWith('.html')) {
+    const cleanUrl = window.location.pathname.replace('.html', '');
+    window.history.replaceState({}, '', cleanUrl);
+}
